@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:youtube/screens/create_new_account_screen.dart';
+import 'package:youtube/screens/dummy_screen.dart';
 import 'package:youtube/screens/forgot_password_screen.dart';
 
 import 'package:youtube/screens/library.dart';
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      initialRoute: '/',
+      initialRoute: '/loginscreen',
       routes: {
         '/': (context) => Tabs(),
         '/loginscreen': (context) => LoginScreen(),
@@ -37,6 +38,7 @@ class MyApp extends StatelessWidget {
         '/creat_new_account': (context) => CreateNewAccountScreen(),
         '/youtube_screen': (context) => Youtube(),
         '/YoutubePlayVideo': (context) => YoutubePlayVideo(),
+        '/dummy_screen': (context) => DummyScreen(),
       },
       debugShowCheckedModeBanner: false,
     );
